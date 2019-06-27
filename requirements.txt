@@ -1,0 +1,8 @@
+werkzeug
+flask
+numpy
+keras
+gevent
+pillow
+h5py
+tensorflow
