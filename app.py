@@ -57,9 +57,10 @@ def predict():
 
         # Make prediction
         preds = model_predict(img, model)
+        print(preds)
         a = ['nv', 'mel', 'bkl', 'bcc', 'akie',
              'vas', 'df']           # Convert to string
-        return jsonify({"prediction": preds[int(np.argmax(preds))]})
+        return jsonify({"prediction": a[int(np.argmax(preds[0]))]})
     return None
 
 
